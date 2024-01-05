@@ -1,13 +1,129 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.header {
+  margin: 1.5vw;
+  font-size: 3vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 2vw;
+}
+
+.navbar-links a {
+  font-size: 1.3vw;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar-links a:hover {
+  color: #007bff;
+}
+
+.navbar-links li {
+  margin-left: 5.5vw;
+}
+
+.navbar .ml-auto {
+  margin-left: auto;
+}
+
+.h1 {
+  margin: 5.5vw;
+  font-size: 3.5vw;
+}
+
+.body-text {
+  font-size: 1.2vw;
+  margin: 5.5vw;
+}
+
+.custom-button {
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 0.8vw 2vw;
+  font-size: 1vw;
+  margin-left: 5vw;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-image {
+  display: flex;
+  max-width: 60%;
+  margin: 5.5vw;
+  margin-left: auto;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2vw;
+}
+
+.custom-card {
+  flex-basis: calc(25% - 1.6vw);
+  margin: 0.8vw;
+}
+
+.custom-card .custom-card-image {
+  width: 100%;
+  padding-top: 75%;
+  position: relative;
+}
+
+.custom-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.icon {
+  width: 4.5%;
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    font-size: 4vw;
+  }
+  .navbar-links a {
+    font-size: 3vw;
+   ;
+  }
+  .h1 {
+    font-size: 3.5vw;
+  }
+  .body-text {
+    font-size: 2.5vw;
+  }
+  .custom-button {
+    font-size: 2.5vw;
+  }
+  .about-image {
+    margin-top: 30px;
+    max-width: 80%;
+   
+  }
+  .icon {
+    margin-top: 5vw;
+    width: 8.5%;
+  }
 }
