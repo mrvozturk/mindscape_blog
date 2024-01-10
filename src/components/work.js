@@ -17,8 +17,9 @@ const Work = () => {
           <img key={index} src={icon} alt={`Language Icon`} className='icon' />
         ))}
       </div>
-      <h1 className='h1'>Latest work</h1>
-
+      <div className='header-container'>
+        <h1 className='header-2'>Latest work</h1>
+      </div>
       <div className='image-row'>
         {cardData.map((card, index) => (
           <Card key={index} className='custom-card'>
