@@ -11,7 +11,7 @@ const LoginForm = () => {
   };
 
   return (
-    <div className='login-container'id='loginFormSection' >
+    <div className='login-container'>
       <div className='left-content'>
         <h1>Let's work together</h1>
         <p>

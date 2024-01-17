@@ -1,25 +1,33 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../index.css';
 
 const Navbar = () => {
-  const handleClick = () => {};
+  const handleClick = () => {
+    // Handle click action if needed
+  };
 
   return (
     <nav className='navbar'>
-      <h1 className='header' onClick={handleClick}>
+      <Link to="/" className='header' onClick={handleClick}>
         Logo
-      </h1>
+      </Link>
+      
       <ul className='navbar-links'>
         <li>
-          <a href='.' className='active'>
+          <Link to="/aboutversion2" className='nav-link active'>
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href='.'>Work</a>
+          <Link to="/work" className='nav-link'>
+            Work
+          </Link>
         </li>
         <li>
-          <a href='.'>Contact</a>
+          <Link to="/contact" className='nav-link'>
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>

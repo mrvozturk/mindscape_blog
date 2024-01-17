@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
   Card,
   CardBody,
@@ -10,21 +11,38 @@ import '../index.css';
 import { languageIcons, cardData } from '../data';
 
 const Work = () => {
+  const handleImageClick = link => {
+    if (link) {
+      window.open(link, '_blank');
+    }
+  };
+
   return (
     <div className='scrollable-container'>
-      <div className='icon-row'>
-        {languageIcons.map((icon, index) => (
-          <img key={index} src={icon} alt={`Language Icon`} className='icon' />
-        ))}
-      </div>
+     
+        <div className='icon-row'>
+          {languageIcons.map((icon, index) => (
+            <img
+              key={index}
+              src={icon}
+              alt={`Language Icon`}
+              className='icon'
+            />
+          ))}
+        </div>
+  
+
       <div className='header-container'>
-        <h1 className='header-2'>Latest work</h1>
+        <h1 className='header-2'>Latest Work</h1>
       </div>
       <div className='image-row'>
         {cardData.map((card, index) => (
           <Card key={index} className='custom-card'>
-            <div className='custom-card-image'>
-              <img src={card.image} alt='card' />
+            <div
+              className='custom-card-image'
+              onClick={() => handleImageClick(card.link)}
+            >
+              <img src={card.image} alt={card.title} />
             </div>
             <CardBody>
               <CardTitle>{card.title}</CardTitle>

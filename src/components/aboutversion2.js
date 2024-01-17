@@ -2,7 +2,7 @@ import React from 'react';
 import '../index.css';
 import aboutImage from '../images/aboutimage.png';
 
-const About = () => {
+const AboutVersion2= () => {
   const scrollToLoginForm = () => {
     const loginFormSection = document.getElementById('loginFormSection');
     loginFormSection.scrollIntoView({ behavior: 'smooth' });
@@ -27,4 +27,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutVersion2;
