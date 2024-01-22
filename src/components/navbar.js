@@ -4,7 +4,6 @@ import '../index.css';
 
 const Navbar = () => {
   const handleClick = () => {
-    // Handle click action if needed
   };
 
   return (
@@ -15,12 +14,12 @@ const Navbar = () => {
       
       <ul className='navbar-links'>
         <li>
-          <Link to="/aboutversion2" className='nav-link active'>
+          <Link to="/aboutversion" className='nav-link '>
             About
           </Link>
         </li>
         <li>
-          <Link to="/work" className='nav-link'>
+          <Link to="/workversion" className='nav-link'>
             Work
           </Link>
         </li>

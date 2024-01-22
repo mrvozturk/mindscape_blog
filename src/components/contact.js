@@ -1,62 +1,72 @@
 import React, { useState } from 'react';
 import '../index.css';
 
-const LoginForm = () => {
+const RegistrationForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Perform registration logic here, e.g., send data to server
+    console.log('Registration submitted:', { name, email, password });
+
+    // Reset the form after submission
+    setName('');
+    setEmail('');
+    setPassword('');
   };
 
   return (
-    <div className='login-container'>
+    <div className='registration-container' id='registrationFormSection'>
       <div className='left-content'>
-        <h1>Let's work together</h1>
+      <h1 className='header-3'>CONTACT US</h1>
+
+        <h1>Create an account</h1>
         <p>
-          On both mobile and desktop platforms, I develop fast and interactive
-          web applications with uninterrupted performance.
+          Join us to explore a world of opportunities and collaboration. Let's
+          build something amazing together!
         </p>
       </div>
-      <form className='login-form' onSubmit={handleSubmit}>
-        <div className='form-group'>
+      <form className='small-registration-form' onSubmit={handleSubmit}>
+        <div className='small-form-group'>
           <input
             type='text'
             id='name'
             value={name}
-            onChange={e => setName(e.target.value)}
+            onChange={(e) => setName(e.target.value)}
             required
             placeholder='Name'
           />
         </div>
 
-        <div className='form-group'>
+        <div className='small-form-group'>
           <input
             type='email'
             id='email'
             value={email}
-            onChange={e => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
             required
             placeholder='Email'
           />
         </div>
 
-        <div className='form-group'>
+        <div className='small-form-group'>
           <input
             type='password'
             id='password'
             value={password}
-            onChange={e => setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
             required
             placeholder='Password'
           />
         </div>
 
-        <button type='submit'>Log In</button>
+        <button className='contact-button' type='submit'>Send Message</button>
       </form>
     </div>
   );
 };
 
-export default LoginForm;
+export default RegistrationForm;
