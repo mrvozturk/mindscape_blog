@@ -1,4 +1,4 @@
-import workImage1 from './images/doğa.png';
+import workImage1 from './images/doga.png';
 import workImage2 from './images/wordgame.jpg';
 import workImage3 from './images/pizza.jpeg';
 import workImage4 from './images/spinwheel.png';
