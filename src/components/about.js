@@ -16,7 +16,7 @@ const About = () => {
           On both mobile and desktop platforms, I develop fast and interactive
           web applications with uninterrupted performance.
         </p>
-        <button className='custom-button' onClick={scrollToLoginForm}>
+        <button className='custom-button' type='submit' onClick={scrollToLoginForm}>
           Contact Me
         </button>
       </div>

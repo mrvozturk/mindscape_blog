@@ -8,19 +8,51 @@ const LoginForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
+    // Add your form submission logic here
   };
 
   return (
-    <div className='login-container'id='loginFormSection' >
+    <div className='login-container' id='loginFormSection'>
       <div className='left-content'>
-        <h1>Let's work together</h1>
+        <h1 className='header4'>Let's work together</h1>
         <p>
           On both mobile and desktop platforms, I develop fast and interactive
           web applications with uninterrupted performance.
         </p>
+        <div className='icons'> 
+          {' '}
+          <a
+            href='mailto:ozturkmerve745@gmail.com'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='icon-link'
+          >
+            <img
+              height='35'
+              src='https://cdn-icons-png.flaticon.com/512/552/552486.png'
+              alt='Email Icon'
+            />
+          </a>
+          &nbsp;&nbsp;&nbsp;
+          <a
+            href='https://www.linkedin.com/in/merve-%C3%B6-5062a5260/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='icon-link'
+          >
+            <img
+              height='35'
+              src='https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-256.png'
+              alt='LinkedIn Icon'
+            />
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
       </div>
+
       <form className='login-form' onSubmit={handleSubmit}>
         <div className='form-group'>
+          <label htmlFor='name'>Name:</label>
           <input
             type='text'
             id='name'
@@ -32,6 +64,7 @@ const LoginForm = () => {
         </div>
 
         <div className='form-group'>
+          <label htmlFor='email'>Email:</label>
           <input
             type='email'
             id='email'
@@ -43,6 +76,7 @@ const LoginForm = () => {
         </div>
 
         <div className='form-group'>
+          <label htmlFor='password'>Password:</label>
           <input
             type='password'
             id='password'
@@ -53,7 +87,9 @@ const LoginForm = () => {
           />
         </div>
 
-        <button className='loginform-button' type='submit'>Log In</button>
+        <button className='loginform-button' type='submit'>
+          Log In
+        </button>
       </form>
     </div>
   );

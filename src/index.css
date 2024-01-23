@@ -1,4 +1,4 @@
-/*navbar*/
+/* Navbar */
 .header {
   margin: 1.5vw;
   font-size: 3vw;
@@ -37,7 +37,8 @@
 .navbar .ml-auto {
   margin-left: auto;
 }
-/*about*/
+
+/* About */
 .h1 {
   margin: 5.5vw;
   font-size: 3.5vw;
@@ -54,6 +55,7 @@
   padding: 0.8vw 2vw;
   font-size: 1vw;
   margin-left: 5vw;
+  border-radius: 0.3vw;
 }
 
 .about-container {
@@ -73,11 +75,13 @@
   flex-wrap: wrap;
   margin: 2vw;
 }
-/*work*/
+
+/* Work */
 .header-2 {
   font-size: 40px;
   text-align: center;
 }
+
 .custom-card {
   transition: box-shadow 0.4s, transform 0.4s;
   box-shadow: 2% 2% 4% rgba(0, 0, 0, 0.5);
@@ -107,13 +111,33 @@
 
 .icon-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .icon {
   width: 4.5%;
+  margin-right: 1%;
+  margin-bottom: 6%;
+  margin-top: 4%;
 }
 
+.icons {
+  margin-top: 5vw;
+}
+
+/* Add the following style if you want the last icon to have no right margin */
+.icon:last-child {
+  margin-right: 0;
+}
+
+.icons-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 20px; /* Adjust the margin as needed */
+}
+
+/* Login Container */
 .login-container {
   display: flex;
   justify-content: center;
@@ -121,17 +145,16 @@
 }
 
 .left-content {
-  flex: 1;
   padding: 30px;
 }
 
 .login-form {
   flex: 1;
-  padding: 30px;
+  padding: 10px;
   border-radius: 8px;
   box-sizing: border-box;
   width: 100%;
-  max-width: 80%;
+  max-width: 25%;
   margin: 0 auto;
   margin-right: 30px;
   margin-bottom: 20px;
@@ -160,7 +183,8 @@ input {
 .loginform-button:hover {
   background-color: #45a049;
 }
-/*abuotpage*/
+
+/* About Page */
 .new-about-page-container {
   display: flex;
   justify-content: center;
@@ -187,20 +211,23 @@ input {
   width: 55%;
   height: auto;
 }
+
 .new-paragraph {
   text-align: center;
   margin-top: 100px;
 }
-/*contactform*/
+
+/* Contact Form */
 .registration-container {
   align-items: center;
-  text-align: center; /* Center-align text within the container */
+  text-align: center;
 }
+
 .small-registration-form {
   display: flex;
   flex-direction: column;
-  max-width: 300px; /* Set the maximum width of the form */
-  margin: auto; /* Center the form on the page */
+  max-width: 300px;
+  margin: auto;
 }
 
 .small-form-group {
@@ -208,8 +235,8 @@ input {
 }
 
 .small-form-group input {
-  padding: 8px; /* Adjust the padding to make the input fields smaller */
-  font-size: 14px; /* Adjust the font size */
+  padding: 8px;
+  font-size: 14px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -222,50 +249,78 @@ input {
   cursor: pointer;
   font-size: 16px;
 }
+
 .header-3 {
   font-size: 15px;
 }
 
-@media screen and (min-width: 1200px) {
-  .login-form {
-    max-width: 30%;
+@media screen and (max-width: 1200px) {
+  .left-content {
+    padding: 55px;
+    margin-right: 5%;
+    font-size: 32px;
   }
-  .loginform-button {
-    width: 20%;
+
+  .login-form {
+    max-width: 65%;
+    margin-right: 30%;
+    margin-bottom: 20px;
+   
+  }
+
+  .icons {
+    margin-top: 8vw;
+  }
+
+  .login-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .header {
-    font-size: 4vw;
-  }
-  .navbar-links a {
-    font-size: 3vw;
-  }
-  .h1 {
-    font-size: 3.5vw;
-  }
-  .body-text {
-    font-size: 2.5vw;
-  }
+  .header,
+  .navbar-links a,
+  .h1,
+  .body-text,
   .custom-button {
-    font-size: 2.5vw;
+    font-size: 3.8vw;
   }
+
   .about-image {
     margin-top: 30px;
     max-width: 80%;
   }
+
   .icon {
     margin-top: 5vw;
     width: 8.5%;
   }
+
   .custom-card {
     flex-basis: calc(50% - 1.6vw);
   }
-  .new-about-page-container {
-    margin-top: 50%;
+
+  .new-about-page-container,
+  .new-paragraph,
+  .icons {
+    margin-top: 12%;
   }
-  .new-paragraph {
-    margin-top: 50%;
+
+  .left-content {
+    font-size: 15px;
+    padding: 30px;
+    margin-left: 3%;
+  }
+
+  .login-form {
+    max-width: 85%;
+    margin-right: 8.5%;
+    margin-bottom: 10px;
+  }
+
+  .login-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
