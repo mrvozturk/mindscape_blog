@@ -251,26 +251,58 @@ input {
 }
 
 .header-3 {
-  font-size: 15px;
+  font-size: 3vw;
+  margin-left: 5.5vw;
 }
 
 @media screen and (max-width: 1200px) {
+  .header,
+  .navbar-links a,
+  .h1,
+  .body-text,
+  .custom-button {
+    font-size: 2.8vw;
+  }
+  .header-3 {
+    font-size: 5.5vw;
+    margin-left: 5vw;
+  }
+  .about-image {
+    margin-top: 8.5vw;
+    max-width: 100%;
+  }
+
+  .icon {
+    margin-top: 5vw;
+    width: 8.5%;
+  }
+
+  .custom-card {
+    flex-basis: calc(50% - 1.6vw);
+    font-size: 3.5vw;
+  }
+
+  .new-about-page-container,
+  .new-paragraph {
+    margin-top: 10%;
+  }
+
   .left-content {
-    padding: 55px;
-    margin-right: 5%;
-    font-size: 32px;
+    font-size: 35px;
+    padding: 3px;
+    margin-left: 3%;
+    margin-top: 2vw;
   }
 
   .login-form {
-    max-width: 65%;
-    margin-right: 30%;
-    margin-bottom: 20px;
+    max-width: 80%;
+    margin-right: 18%;
+    margin-bottom: 10px;
   }
 
   .icons {
-    margin-top: 8vw;
+    margin-bottom: 4vw;
   }
-
   .login-container {
     flex-direction: column;
     align-items: center;
@@ -359,6 +391,6 @@ input {
   .login-form {
     margin-top: 5vw;
     margin-bottom: 15vw;
-    margin-right:12vw;
+    margin-right: 12vw;
   }
 }
