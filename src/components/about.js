@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div className='about-container'>
       <div className='frontend-developer'>
-        <h1 className='h1'>Frontend Developer</h1>
+        <h1 className='header-3'>Frontend Developer</h1>
         <p className='body-text'>
           On both mobile and desktop platforms, I develop fast and interactive
           web applications with uninterrupted performance.

@@ -265,7 +265,6 @@ input {
     max-width: 65%;
     margin-right: 30%;
     margin-bottom: 20px;
-   
   }
 
   .icons {
@@ -284,12 +283,15 @@ input {
   .h1,
   .body-text,
   .custom-button {
-    font-size: 3.8vw;
+    font-size: 2.8vw;
   }
-
+  .header-3 {
+    font-size: 4.5vw;
+    margin-left: 5vw;
+  }
   .about-image {
     margin-top: 30px;
-    max-width: 80%;
+    max-width: 100%;
   }
 
   .icon {
@@ -302,25 +304,61 @@ input {
   }
 
   .new-about-page-container,
-  .new-paragraph,
-  .icons {
-    margin-top: 12%;
+  .new-paragraph {
+    margin-top: 10%;
   }
 
   .left-content {
-    font-size: 15px;
-    padding: 30px;
+    font-size: 20px;
+    padding: 3px;
     margin-left: 3%;
+    margin-top: 2vw;
   }
 
   .login-form {
-    max-width: 85%;
-    margin-right: 8.5%;
+    max-width: 80%;
+    margin-right: 18%;
     margin-bottom: 10px;
   }
 
+  .icons {
+    margin-bottom: 4vw;
+  }
   .login-container {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .custom-button {
+    font-size: 4.2vw;
+    border: 2vw;
+    margin-bottom: 8vw;
+  }
+  .header-3 {
+    font-size: 5vw;
+    margin-left: 5vw;
+  }
+  .header {
+    font-size: 5.2vw;
+    margin-bottom: 3vw;
+  }
+  .body-text {
+    font-size: 3.8vw;
+  }
+  .navbar-links a {
+    font-size: 4vw;
+  }
+  .about-image {
+    max-width: 100%;
+  }
+  .left-content {
+    padding: 15px;
+    margin-left: 5vw;
+  }
+  .login-form {
+    margin-top: 5vw;
+    margin-bottom: 15vw;
+    margin-right:12vw;
   }
 }
