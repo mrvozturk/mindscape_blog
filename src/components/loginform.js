@@ -8,7 +8,6 @@ const LoginForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    // Add your form submission logic here
   };
 
   return (

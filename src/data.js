@@ -8,9 +8,10 @@ import workImage7 from './images/blog.avif';
 
 export const languageIcons = [
   'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
-  'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
-  'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
-  'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
+  'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg',
+  'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
+  'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg',
+  'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg'
 ];
 
 export const cardData = [
@@ -18,7 +19,8 @@ export const cardData = [
     title: 'DOĞAYLA YAŞAM',
     text: 'Doğayla uyumlu  ve bilinçli yaşam için',
     image: workImage1,
-    link: 'https://bbc-blog.vercel.app/'
+    link: 'https://bbc-blog.vercel.app/',
+    languageIcon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
   },
   {
     title: 'KELİME OYUNU',
@@ -40,8 +42,7 @@ export const cardData = [
   },
   {
     title: 'PUZZLE GAME',
-    text:
-      'Zihinsel becerilerini sına',
+    text: 'Zihinsel becerilerini sına',
     image: workImage5,
     link: 'https://puzzle-new.vercel.app/'
   },
@@ -56,10 +57,5 @@ export const cardData = [
     text: 'Yaratıcı içerik ve bilgi dolu blog',
     image: workImage7,
     link: 'https://www.merveozturk.dev/'
-  },
-  {
-    title: 'BLOG',
-    text: 'Yaratıcı içerik ve bilgi dolu blog.',
-    image: workImage7
   }
 ];

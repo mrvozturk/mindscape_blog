@@ -5,7 +5,8 @@ import {
   CardBody,
   CardTitle,
   CardSubtitle,
-  CardText
+  CardText,
+ 
 } from 'react-bootstrap';
 import '../index.css';
 import { languageIcons, cardData } from '../data';
@@ -19,18 +20,11 @@ const Work = () => {
 
   return (
     <div className='scrollable-container'>
-     
-        <div className='icon-row'>
-          {languageIcons.map((icon, index) => (
-            <img
-              key={index}
-              src={icon}
-              alt={`Language Icon`}
-              className='icon'
-            />
-          ))}
-        </div>
-  
+      <div className='icon-row'>
+        {languageIcons.map((icon, index) => (
+          <img key={index} src={icon} alt={`Language Icon`} className='icon' />
+        ))}
+      </div>
 
       <div className='header-container'>
         <h1 className='header-2'>Latest Work</h1>
@@ -45,6 +39,7 @@ const Work = () => {
               <img src={card.image} alt={card.title} />
             </div>
             <CardBody>
+         
               <CardTitle>{card.title}</CardTitle>
               <CardSubtitle>{card.subtitle}</CardSubtitle>
               <CardText>{card.text}</CardText>
