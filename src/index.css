@@ -373,12 +373,15 @@ input {
     margin-bottom: 8vw;
   }
   .header-3 {
-    font-size: 5vw;
+    font-size: 7vw;
     margin-left: 5vw;
   }
   .header {
     font-size: 5.2vw;
     margin-bottom: 3vw;
+  }
+  .header-2 {
+    font-size: 9.2vw;
   }
   .body-text {
     font-size: 3.8vw;
@@ -388,14 +391,22 @@ input {
   }
   .about-image {
     max-width: 100%;
+    margin-top: 60px;
   }
   .left-content {
-    padding: 15px;
-    margin-left: 5vw;
+    font-size: 18px;
+    padding: 8px;
+    margin-left: 4vw;
   }
   .login-form {
+    padding: 1px;
     margin-top: 5vw;
     margin-bottom: 15vw;
-    margin-right: 12vw;
+    margin-right: 10vw;
+  }
+  .card-title {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 5px;
   }
 }

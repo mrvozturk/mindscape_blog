@@ -20,7 +20,7 @@ export const cardData = [
     text: 'Doğayla uyumlu  ve bilinçli yaşam için',
     image: workImage1,
     link: 'https://bbc-blog.vercel.app/',
-    languageIcon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
+   
   },
   {
     title: 'KELİME OYUNU',
