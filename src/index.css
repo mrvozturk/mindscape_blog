@@ -214,35 +214,72 @@ input {
 }
 
 /* About Page */
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .custom-page-container {
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
+  margin-top: 50px;
   padding: 20px;
 }
-
 
 .custom-text-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  box-shadow: 0 0 5px rgba(169, 169, 169, 0.5); /* Adjusted box shadow for a smaller frame */
-  padding: 20px; /* Padding for the content inside the frame */
+  box-shadow: 0 0 5px rgba(169, 169, 169, 0.5);
+  padding: 20px;
 }
 
 .custom-image-container {
-  width: 50%; /* Adjusted width to 50% */
+  width: 50%;
 }
 
 .custom-image {
-  width: 70%; /* Set width to 100% for responsiveness */
+  width: 70%;
   height: auto;
 }
 
 .custom-paragraph {
+  margin-left: 20px;
   line-height: 1.9;
-  max-width: 45%;
+  max-width: 50%;
+  opacity: 0; /* Initially hide the text */
 }
+
+.custom-about, .custom-image {
+  animation-duration: 1s;
+}
+
+.custom-image-container {
+  animation: slideInFromTop 1s ease-out forwards; /* Keep the final state after animation */
+}
+
+.custom-paragraph {
+  animation: slideInFromRight 1s ease-out forwards;
+  animation-delay: 1s; /* Delay the text animation by 1s after the image animation */
+}
+
 
 /* Contact Form */
 .registration-container {
