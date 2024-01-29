@@ -108,6 +108,30 @@
   top: 0;
   left: 0;
 }
+.custom-card-icon-2 {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-card-icon-2::before {
+  content: '';
+  display: flex;
+  padding-top: 50%;
+}
+
+.custom-card-icon-2 img {
+  width: 35px;
+  height: 35px;
+  top: 0;
+}
+.custom-card-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-column-gap: 0;
+}
 
 .card-title {
   font-weight: bold;
@@ -190,36 +214,34 @@ input {
 }
 
 /* About Page */
-.new-about-page-container {
+.custom-page-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40vh;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 5%;
+  padding: 20px;
 }
 
-.new-text-container {
-  align-items: center;
+
+.custom-text-container {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(169, 169, 169, 0.5); /* Adjusted box shadow for a smaller frame */
+  padding: 20px; /* Padding for the content inside the frame */
 }
 
-.new-h1 {
-  margin: 0;
+.custom-image-container {
+  width: 50%; /* Adjusted width to 50% */
 }
 
-.new-image-container {
-  text-align: center;
-}
-
-.new-about-image {
-  width: 55%;
+.custom-image {
+  width: 70%; /* Set width to 100% for responsiveness */
   height: auto;
 }
 
-.new-paragraph {
-  text-align: center;
-  margin-top: 100px;
+.custom-paragraph {
+  line-height: 1.9;
+  max-width: 45%;
 }
 
 /* Contact Form */
