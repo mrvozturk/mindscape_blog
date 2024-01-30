@@ -20,7 +20,7 @@ export const languageIcons = [
 export const cardData = [
   {
     title: 'DOĞAYLA YAŞAM',
-    text: 'Doğayla uyumlu  ve bilinçli yaşam için',
+    text: 'Doğayla uyumlu  ve bilinçli yaşam için ',
     image: workImage1,
     link: 'https://bbc-blog.vercel.app/',
     icons: [

@@ -130,7 +130,11 @@
 .card-title {
   font-weight: bold;
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: 15px;
+}
+.card-text {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .icon-row {
@@ -181,6 +185,7 @@
   margin: 0 auto;
   margin-right: 30px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 input {
@@ -397,7 +402,7 @@ input {
   }
   .new-about-page-container,
   .new-paragraph {
-    margin-top: 10%;
+    margin-top: 8%;
   }
   .left-content {
     font-size: 20px;
@@ -459,26 +464,39 @@ input {
   .left-content {
     font-size: 18px;
     padding: 8px;
-    margin-left: 4vw;
   }
+
   .login-form {
-    padding: 1px;
+    text-align: center;
     margin-top: 5vw;
     margin-bottom: 15vw;
-    margin-right: 10vw;
+    margin-left: 15vw;
   }
   .card-title {
     font-weight: bold;
     font-size: 13px;
+    margin-top: 5px;
   }
   .custom-card-icon-2 {
-    width: 20%;
+    width: 14%;
   }
   .custom-card-icons {
-    margin-bottom: 35%;
+    margin-bottom: 32%;
   }
   .custom-card-icon-2 img {
-    width: 25px;
-    height: 25px;
+    width: 18px;
+    height: 18px;
+  }
+  .card-text {
+    margin-top: 10px;
+    font-size: 14px;
+    margin-bottom: 1px;
+  }
+  .header4 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .loginform-p {
+    font-size: 17px;
   }
 }

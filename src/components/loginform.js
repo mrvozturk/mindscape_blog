@@ -4,8 +4,6 @@ import '../index.css';
 const LoginForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
   const handleSubmit = e => {
     e.preventDefault();
   };
@@ -14,11 +12,11 @@ const LoginForm = () => {
     <div className='login-container' id='loginFormSection'>
       <div className='left-content'>
         <h1 className='header4'>Let's work together</h1>
-        <p>
+        <p className='loginform-p'>
           On both mobile and desktop platforms, I develop fast and interactive
           web applications with uninterrupted performance.
         </p>
-        <div className='icons'> 
+        <div className='icons'>
           {' '}
           <a
             href='mailto:ozturkmerve745@gmail.com'
@@ -60,7 +58,6 @@ const LoginForm = () => {
             placeholder='Name'
           />
         </div>
-
         <div className='form-group'>
           <input
             type='email'
@@ -72,19 +69,8 @@ const LoginForm = () => {
           />
         </div>
 
-        <div className='form-group'>
-          <input
-            type='password'
-            id='password'
-            value={password}
-            onChange={e => setPassword(e.target.value)}
-            required
-            placeholder='Password'
-          />
-        </div>
-
         <button className='loginform-button' type='submit'>
-          Log In
+          Submit
         </button>
       </form>
     </div>
