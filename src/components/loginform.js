@@ -51,7 +51,6 @@ const LoginForm = () => {
 
       <form className='login-form' onSubmit={handleSubmit}>
         <div className='form-group'>
-          <label htmlFor='name'>Name:</label>
           <input
             type='text'
             id='name'
@@ -63,7 +62,6 @@ const LoginForm = () => {
         </div>
 
         <div className='form-group'>
-          <label htmlFor='email'>Email:</label>
           <input
             type='email'
             id='email'
@@ -75,7 +73,6 @@ const LoginForm = () => {
         </div>
 
         <div className='form-group'>
-          <label htmlFor='password'>Password:</label>
           <input
             type='password'
             id='password'
