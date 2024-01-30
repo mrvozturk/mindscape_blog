@@ -337,6 +337,9 @@ input {
   .custom-button {
     font-size: 2.8vw;
   }
+  .header-2 {
+    font-size: 5.5vw;
+  }
   .header-3 {
     font-size: 5.5vw;
     margin-left: 5vw;
@@ -353,38 +356,45 @@ input {
     flex-basis: calc(50% - 1.6vw);
     font-size: 3.5vw;
   }
-  .new-about-page-container,
-  .new-paragraph {
-    margin-top: 10%;
-  }
+
   .left-content {
-    font-size: 35px;
-    padding: 3px;
-    margin-left: 3%;
-    margin-top: 2vw;
+    font-size: 22px;
   }
-  .login-form {
-    max-width: 80%;
-    margin-right: 18%;
-    margin-bottom: 10px;
+
+  .loginform-button {
+    margin-right: 15vw;
   }
   .icons {
     margin-bottom: 4vw;
   }
-  .login-container {
-    flex-direction: column;
-    align-items: center;
+  .custom-card-icon-2 {
+    width: 12%;
+  }
+  .custom-card-icons {
+    margin-bottom: 25%;
+  }
+  .custom-card-icon-2 img {
+    width: 40px;
+    height: 40px;
+  }
+  .card-title{
+    font-size: 30px;
+  }
+  .card-text {
+    margin-top: 15px;
+    font-size: 30px;
+    margin-bottom: 1px;
+  }
+  .header4 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .loginform-p {
+    font-size: 17px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .header,
-  .navbar-links a,
-  .h1,
-  .body-text,
-  .custom-button {
-    font-size: 2.8vw;
-  }
   .header-3 {
     font-size: 4.5vw;
     margin-left: 5vw;
@@ -393,13 +403,7 @@ input {
     margin-top: 30px;
     max-width: 100%;
   }
-  .icon {
-    margin-top: 10px;
-    width: 8.5%;
-  }
-  .custom-card {
-    flex-basis: calc(50% - 1.6vw);
-  }
+
   .new-about-page-container,
   .new-paragraph {
     margin-top: 8%;
@@ -412,7 +416,6 @@ input {
   }
   .login-form {
     max-width: 80%;
-    margin-right: 18%;
     margin-bottom: 10px;
   }
   .icons {
@@ -431,6 +434,16 @@ input {
   .custom-card-icon-2 img {
     width: 40px;
     height: 35px;
+  }
+  .login-form {
+    text-align: center;
+    margin-top: 5vw;
+    margin-bottom: 15vw;
+    margin-left: 25vw;
+  }
+  .loginform-button {
+    text-align: center;
+    margin-right: 25vw;
   }
 }
 
