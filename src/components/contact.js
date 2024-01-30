@@ -17,7 +17,7 @@ const RegistrationForm = () => {
       <div className='left-content'>
         <h1 className='header-3'>CONTACT US</h1>
 
-        <h1>Create an account</h1>
+        <h1 className='header-5'>Create an account</h1>
         <p>
           Join us to explore a world of opportunities and collaboration. Let's
           build something amazing together!

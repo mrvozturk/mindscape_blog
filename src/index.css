@@ -27,7 +27,7 @@
 }
 
 .navbar-links a:hover {
-  color: #007bff;
+  color: #333;
 }
 
 .navbar-links li {
@@ -317,8 +317,8 @@ input {
 
 .contact-button {
   padding: 10px;
-  background-color: tan;
-  color: black;
+  background-color: #333;
+  color: #fff;
   border: none;
   cursor: pointer;
   font-size: 16px;
@@ -436,13 +436,17 @@ input {
 
 @media only screen and (max-width: 568px) {
   .custom-button {
-    font-size: 4.2vw;
-    border: 2vw;
+    font-size: 3.5vw;
+    padding: 1.5vw;
+    border: 1vw;
     margin-bottom: 8vw;
   }
   .header-3 {
-    font-size: 7vw;
+    font-size: 9vw;
     margin-left: 5vw;
+  }
+  .header-5 {
+    font-size: 5.5vw;
   }
   .header {
     font-size: 5.2vw;
@@ -452,7 +456,7 @@ input {
     font-size: 9.2vw;
   }
   .body-text {
-    font-size: 3.8vw;
+    font-size: 3.5vw;
   }
   .navbar-links a {
     font-size: 4vw;
@@ -498,5 +502,32 @@ input {
   }
   .loginform-p {
     font-size: 17px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .custom-page-container {
+    margin-top: 30px;
+    padding: 12px;
+  }
+  .custom-text-container {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .custom-about {
+    text-align: center;
+  }
+  .custom-image-container {
+    width: 85%;
+  }
+
+  .custom-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .custom-paragraph {
+    margin-left: 0;
+    max-width: 100%;
   }
 }
