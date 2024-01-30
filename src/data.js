@@ -24,9 +24,8 @@ export const cardData = [
     image: workImage1,
     link: 'https://bbc-blog.vercel.app/',
     icons: [
-      { id: 1, img: IconCSS },
+      { id: 1, img: IconCSS  },
       { id: 2, img: IconHTML },
-      { id: 3, img: IconHTML },
     ]
   },
   {

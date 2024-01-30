@@ -1,5 +1,11 @@
 import React from 'react';
-import { Card, CardBody, CardTitle, CardSubtitle, CardText } from 'react-bootstrap';
+import {
+  Card,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  CardText
+} from 'react-bootstrap';
 import '../index.css';
 import { languageIcons, cardData } from '../data';
 
@@ -35,14 +41,15 @@ const Work = () => {
               <CardTitle>{card.title}</CardTitle>
               <CardSubtitle>{card.subtitle}</CardSubtitle>
               <CardText>{card.text}</CardText>
+              <div className='custom-card-icons'>
+                {card.icons &&
+                  card.icons.map((icon, subIndex) => (
+                    <div key={subIndex} className='custom-card-icon-2'>
+                      <img src={icon.img} alt={icon.id} className='icon' />
+                    </div>
+                  ))}
+              </div>
             </CardBody>
-            <div className='custom-card-icons'>
-              {card.icons && card.icons.map(icon => (
-                <div key={icon.id} className='custom-card-icon-2'>
-                  <img src={icon.img} alt={icon.id} className='icon' />
-                </div>
-              ))}
-            </div>
           </Card>
         ))}
       </div>
