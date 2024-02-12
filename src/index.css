@@ -71,6 +71,8 @@ body {
   font-size: 1vw;
   margin-left: 5vw;
   border-radius: 0.3vw;
+  border: none;
+  outline: none;
 }
 
 .about-container {
@@ -359,6 +361,7 @@ input {
   .custom-button {
     display: block;
     margin: 0 auto;
+    margin-bottom: 10vw;
   }
   .header-2 {
     font-size: 5.5vw;
@@ -369,8 +372,9 @@ input {
     text-align: center; /* Adjust text alignment as needed */
   }
   .icon {
-    margin-top: 5vw;
-    width: 8.5%;
+    margin-top: 0.5vw;
+    margin-bottom: 9.5vw;
+    width: 10.5%;
   }
 
   .custom-card {
@@ -475,11 +479,11 @@ input {
   }
 
   .about-image {
-    max-width: 100%; /* Take full width on smaller screens */
-    margin: 0; /* Remove margin on smaller screens */
+    max-width: 85%; /* Take full width on smaller screens */
+    margin: 0 auto; /* Remove margin on smaller screens */
   }
   .custom-button {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     padding: 1.5vw;
     border: 1vw;
     margin-bottom: 8vw;
@@ -488,6 +492,7 @@ input {
   .header-3 {
     font-size: 9vw;
     margin-left: 5vw;
+    margin-top: 10vw;
   }
 
   .header-5 {
@@ -504,7 +509,7 @@ input {
   }
 
   .body-text {
-    font-size: 3.5vw;
+    font-size: 4.2vw;
   }
 
   .navbar-links a {
@@ -578,5 +583,9 @@ input {
   .custom-paragraph {
     margin-left: 0;
     max-width: 100%;
+  }
+  .icon {
+    margin-bottom: 15.5vw;
+    width: 13.5%;
   }
 }
