@@ -428,6 +428,17 @@ input {
 }
 
 @media only screen and (max-width: 768px) {
+  .about-container {
+    margin: 65px 0;
+    flex-direction: column-reverse; /* Stack items vertically with reverse order */
+  }
+
+  .about-image {
+    max-width: 65%; /* Take full width on smaller screens */
+    margin: 0 auto;
+    margin-bottom: 3vw;
+  }
+
   .header-3 {
     font-size: 5.5vw;
     text-align: center;
@@ -481,12 +492,14 @@ input {
   .about-image {
     max-width: 85%; /* Take full width on smaller screens */
     margin: 0 auto; /* Remove margin on smaller screens */
+    margin-bottom: 1vw;
+
   }
   .custom-button {
     font-size: 4.5vw;
     padding: 1.5vw;
     border: 1vw;
-    margin-bottom: 8vw;
+    margin-bottom: 4vw;
   }
 
   .header-3 {
@@ -510,6 +523,7 @@ input {
 
   .body-text {
     font-size: 4.2vw;
+    margin-bottom: 10vw;
   }
 
   .navbar-links a {
