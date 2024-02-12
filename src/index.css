@@ -391,7 +391,7 @@ input {
   }
 
   .icons {
-    margin-bottom: 4vw;
+    margin-bottom: 2vw;
   }
 
   .custom-card-icon-2 {
@@ -399,6 +399,7 @@ input {
   }
 
   .custom-card-icons {
+    margin-top: 8%;
     margin-bottom: 25%;
   }
 
