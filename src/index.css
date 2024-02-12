@@ -1,3 +1,17 @@
+/* Variables */
+:root {
+  --main-color: #2d2d2d;
+  --text-color: #333;
+  --background-color: #f0f0f0;
+  --box-shadow-color: rgba(0, 0, 0, 0.5);
+  --hover-color: #543;
+}
+
+/* General Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* Navbar */
 .header {
   margin: 1.5vw;
@@ -23,11 +37,11 @@
 .navbar-links a {
   font-size: 1.3vw;
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
 }
 
 .navbar-links a:hover {
-  color: #333;
+  color: var(--hover-color);
 }
 
 .navbar-links li {
@@ -51,7 +65,7 @@
 }
 
 .custom-button {
-  background-color: #2d2d2d;
+  background-color: var(--main-color);
   color: #fff;
   padding: 0.8vw 2vw;
   font-size: 1vw;
@@ -84,13 +98,13 @@
 
 .custom-card {
   transition: box-shadow 0.4s, transform 0.4s;
-  box-shadow: 2% 2% 4% rgba(0, 0, 0, 0.5);
+  box-shadow: 2% 2% 4% var(--box-shadow-color);
   flex-basis: calc(25% - 1.6vw);
   margin: 0.8vw;
 }
 
 .custom-card:hover {
-  box-shadow: 0 0 2% 2% rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 2% 2% var(--box-shadow-color);
   transform: scale(1.03);
 }
 
@@ -129,9 +143,10 @@
 
 .card-title {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 15px;
 }
+
 .card-text {
   font-size: 18px;
   margin-bottom: 20px;
@@ -179,48 +194,40 @@
   flex: 1;
   padding: 10px;
   border-radius: 8px;
-  box-sizing: border-box;
   width: 100%;
   max-width: 25%;
   margin: 0 auto;
-  margin-right: 30px;
-  margin-bottom: 20px;
-  text-align: center;
+  margin-right: 40px;
 }
 
 input {
-  font-family: 'Montserrat', sans-serif;
-  box-sizing: border-box;
   max-width: 380px;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: var(--background-color);
   margin: 10px 0;
-  height: 55px;
+  height: 60px;
   border-radius: 5px;
   display: grid;
-  padding: 0 0.4rem;
-  position: relative;
+  padding: 0 1rem;
   outline: none;
   border: none;
-  line-height: 1;
 }
 
-.loginform-button {
+.submit-button {
   width: 150px;
-  background-color: #2d2d2d;
+  background-color: var(--main-color);
   border: none;
   outline: none;
   height: 40px;
   border-radius: 4px;
   color: #fff;
-  text-transform: uppercase;
   font-weight: 600;
-  margin: 10px 0;
   cursor: pointer;
+  margin-top: 1.5vw;
 }
 
-.loginform-button:hover {
-  background-color: #543;
+.login-form-button:hover {
+  background-color: var(--hover-color);
 }
 
 /* About Page */
@@ -329,29 +336,43 @@ input {
   margin-left: 5.5vw;
 }
 
+/* Media Queries */
 @media screen and (max-width: 1200px) {
+  .about-container {
+    margin: 65px 0;
+    flex-direction: column-reverse; /* Stack items vertically with reverse order */
+  }
+
+  .about-image {
+    max-width: 65%; /* Take full width on smaller screens */
+    margin: 0 auto;
+  }
+
   .header,
   .navbar-links a,
   .h1,
   .body-text,
   .custom-button {
     font-size: 2.8vw;
+    text-align: center;
+  }
+  .custom-button {
+    display: block;
+    margin: 0 auto;
   }
   .header-2 {
     font-size: 5.5vw;
   }
+
   .header-3 {
     font-size: 5.5vw;
-    margin-left: 5vw;
-  }
-  .about-image {
-    margin-top: 8.5vw;
-    max-width: 100%;
+    text-align: center; /* Adjust text alignment as needed */
   }
   .icon {
     margin-top: 5vw;
     width: 8.5%;
   }
+
   .custom-card {
     flex-basis: calc(50% - 1.6vw);
     font-size: 3.5vw;
@@ -362,33 +383,41 @@ input {
   }
 
   .loginform-button {
-    margin-right: 15vw;
+    margin: 30px;
   }
+
   .icons {
     margin-bottom: 4vw;
   }
+
   .custom-card-icon-2 {
     width: 12%;
   }
+
   .custom-card-icons {
     margin-bottom: 25%;
   }
+
   .custom-card-icon-2 img {
     width: 40px;
     height: 40px;
   }
-  .card-title{
+
+  .card-title {
     font-size: 30px;
   }
+
   .card-text {
     margin-top: 15px;
     font-size: 30px;
     margin-bottom: 1px;
   }
+
   .header4 {
     font-size: 30px;
     margin-bottom: 30px;
   }
+
   .loginform-p {
     font-size: 17px;
   }
@@ -396,140 +425,147 @@ input {
 
 @media only screen and (max-width: 768px) {
   .header-3 {
-    font-size: 4.5vw;
-    margin-left: 5vw;
-  }
-  .about-image {
-    margin-top: 30px;
-    max-width: 100%;
+    font-size: 5.5vw;
+    text-align: center;
   }
 
   .new-about-page-container,
   .new-paragraph {
     margin-top: 8%;
   }
+
   .left-content {
     font-size: 20px;
     padding: 3px;
     margin-left: 3%;
     margin-top: 2vw;
   }
-  .login-form {
-    max-width: 80%;
-    margin-bottom: 10px;
-  }
+
   .icons {
     margin-bottom: 4vw;
   }
+
   .login-container {
     flex-direction: column;
     align-items: center;
   }
+
   .custom-card-icon-2 {
     width: 18%;
   }
+
   .custom-card-icons {
     margin-bottom: 30%;
   }
+
   .custom-card-icon-2 img {
     width: 40px;
     height: 35px;
   }
+
   .login-form {
-    text-align: center;
-    margin-top: 5vw;
-    margin-bottom: 15vw;
-    margin-left: 25vw;
-  }
-  .loginform-button {
-    text-align: center;
-    margin-right: 25vw;
+    max-width: 80%;
   }
 }
 
 @media only screen and (max-width: 568px) {
+  .about-container {
+    margin: 55px 0;
+    flex-direction: column-reverse; /* Stack items vertically with reverse order */
+  }
+
+  .about-image {
+    max-width: 100%; /* Take full width on smaller screens */
+    margin: 0; /* Remove margin on smaller screens */
+  }
   .custom-button {
     font-size: 3.5vw;
     padding: 1.5vw;
     border: 1vw;
     margin-bottom: 8vw;
   }
+
   .header-3 {
     font-size: 9vw;
     margin-left: 5vw;
   }
+
   .header-5 {
     font-size: 5.5vw;
   }
+
   .header {
     font-size: 5.2vw;
     margin-bottom: 3vw;
   }
+
   .header-2 {
     font-size: 9.2vw;
   }
+
   .body-text {
     font-size: 3.5vw;
   }
+
   .navbar-links a {
     font-size: 4vw;
   }
-  .about-image {
-    max-width: 100%;
-    margin-top: 60px;
-  }
+
   .left-content {
     font-size: 18px;
     padding: 8px;
   }
 
-  .login-form {
-    text-align: center;
-    margin-top: 5vw;
-    margin-bottom: 15vw;
-    margin-left: 15vw;
-  }
   .card-title {
     font-weight: bold;
     font-size: 13px;
     margin-top: 5px;
   }
+
   .custom-card-icon-2 {
     width: 14%;
   }
+
   .custom-card-icons {
     margin-bottom: 32%;
   }
+
   .custom-card-icon-2 img {
     width: 18px;
     height: 18px;
   }
+
   .card-text {
     margin-top: 10px;
     font-size: 14px;
     margin-bottom: 1px;
   }
+
   .header4 {
     font-size: 30px;
     margin-bottom: 30px;
   }
+
   .loginform-p {
     font-size: 17px;
   }
-}
-@media only screen and (max-width: 568px) {
+
+  /* Additional adjustments for smaller screens */
   .custom-page-container {
     margin-top: 30px;
     padding: 12px;
   }
+
   .custom-text-container {
     padding: 10px;
     flex-direction: column;
     align-items: center;
   }
+
   .custom-about {
     text-align: center;
   }
+
   .custom-image-container {
     width: 85%;
   }
