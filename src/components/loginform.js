@@ -16,7 +16,7 @@ const LoginForm = () => {
           On both mobile and desktop platforms, I develop fast and interactive
           web applications with uninterrupted performance.
         </p>
-        <div className='icons'>
+        <div className=''>
           {' '}
           <a
             href='mailto:ozturkmerve745@gmail.com'

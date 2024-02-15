@@ -193,18 +193,15 @@ body {
 }
 
 .login-form {
-  flex: 1;
   padding: 10px;
   border-radius: 8px;
   width: 100%;
-  max-width: 25%;
+  max-width: 400px; /* Sayfa genişliğine göre ayarlanabilir */
   margin: 0 auto;
-  margin-right: 40px;
 }
 
 input {
-  max-width: 380px;
-  width: 100%;
+  width: calc(100% - 20px); /* Kenar boşlukları eklemek için */
   background-color: var(--background-color);
   margin: 10px 0;
   height: 60px;
@@ -226,10 +223,6 @@ input {
   font-weight: 600;
   cursor: pointer;
   margin-top: 1.5vw;
-}
-
-.login-form-button:hover {
-  background-color: var(--hover-color);
 }
 
 /* About Page */
@@ -350,12 +343,11 @@ input {
     margin: 0 auto;
   }
 
-  .header,
   .navbar-links a,
   .h1,
   .body-text,
   .custom-button {
-    font-size: 2.8vw;
+    font-size: 3.8vw;
     text-align: center;
   }
   .custom-button {
@@ -363,8 +355,11 @@ input {
     margin: 0 auto;
     margin-bottom: 10vw;
   }
-  .header-2 {
+  .header {
     font-size: 5.5vw;
+  }
+  .header-2 {
+    font-size: 8.5vw;
   }
 
   .header-3 {
@@ -380,14 +375,6 @@ input {
   .custom-card {
     flex-basis: calc(50% - 1.6vw);
     font-size: 3.5vw;
-  }
-
-  .left-content {
-    font-size: 22px;
-  }
-
-  .loginform-button {
-    margin: 30px;
   }
 
   .icons {
@@ -409,61 +396,56 @@ input {
   }
 
   .card-title {
-    font-size: 30px;
+    font-size: 4vw;
   }
 
   .card-text {
-    margin-top: 15px;
-    font-size: 30px;
-    margin-bottom: 1px;
+    margin-top: 2vw;
+    font-size: 3.5vw;
   }
 
   .header4 {
     font-size: 30px;
     margin-bottom: 30px;
   }
-
-  .loginform-p {
-    font-size: 17px;
-  }
 }
 
 @media only screen and (max-width: 768px) {
+  .navbar-links a,
+  .h1,
+  .custom-button {
+    font-size: 3.5vw;
+    text-align: center;
+  }
   .about-container {
     margin: 65px 0;
     flex-direction: column-reverse; /* Stack items vertically with reverse order */
   }
-
+  .header {
+    font-size: 5.5vw;
+  }
   .about-image {
     max-width: 65%; /* Take full width on smaller screens */
     margin: 0 auto;
     margin-bottom: 3vw;
   }
-
+  .header-2 {
+    font-size: 7.5vw;
+  }
   .header-3 {
-    font-size: 5.5vw;
+    font-size: 8.5vw;
     text-align: center;
   }
-
+  .body-text {
+    font-size: 2.8vw;
+  }
   .new-about-page-container,
   .new-paragraph {
     margin-top: 8%;
   }
 
-  .left-content {
-    font-size: 20px;
-    padding: 3px;
-    margin-left: 3%;
-    margin-top: 2vw;
-  }
-
   .icons {
     margin-bottom: 4vw;
-  }
-
-  .login-container {
-    flex-direction: column;
-    align-items: center;
   }
 
   .custom-card-icon-2 {
@@ -479,14 +461,19 @@ input {
     height: 35px;
   }
 
-  .login-form {
-    max-width: 80%;
+  .card-text {
+    font-size: 25px;
   }
+  .card-title {
+    font-size: 28px;
+  }
+
+ 
 }
 
 @media only screen and (max-width: 568px) {
   .about-container {
-    margin: 55px 0;
+    margin: 40px 0;
     flex-direction: column-reverse; /* Stack items vertically with reverse order */
   }
 
@@ -494,13 +481,12 @@ input {
     max-width: 85%; /* Take full width on smaller screens */
     margin: 0 auto; /* Remove margin on smaller screens */
     margin-bottom: 1vw;
-
   }
   .custom-button {
     font-size: 4.5vw;
     padding: 1.5vw;
     border: 1vw;
-    margin-bottom: 4vw;
+    margin-bottom: 10vw;
   }
 
   .header-3 {
@@ -514,7 +500,7 @@ input {
   }
 
   .header {
-    font-size: 5.2vw;
+    font-size: 6.2vw;
     margin-bottom: 3vw;
   }
 
@@ -531,14 +517,9 @@ input {
     font-size: 4vw;
   }
 
-  .left-content {
-    font-size: 18px;
-    padding: 8px;
-  }
-
   .card-title {
     font-weight: bold;
-    font-size: 13px;
+    font-size: 14.5px;
     margin-top: 5px;
   }
 
@@ -557,17 +538,13 @@ input {
 
   .card-text {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 12.8px;
     margin-bottom: 1px;
   }
 
   .header4 {
     font-size: 30px;
     margin-bottom: 30px;
-  }
-
-  .loginform-p {
-    font-size: 17px;
   }
 
   /* Additional adjustments for smaller screens */
@@ -604,3 +581,5 @@ input {
     width: 13.5%;
   }
 }
+
+
