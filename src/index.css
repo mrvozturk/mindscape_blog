@@ -184,32 +184,47 @@ body {
 /* Login Container */
 .login-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .left-content {
-  padding: 30px;
+  flex: 1;
 }
 
 .login-form {
-  padding: 10px;
-  border-radius: 8px;
-  width: 100%;
-  max-width: 400px; /* Sayfa genişliğine göre ayarlanabilir */
-  margin: 0 auto;
+  max-width: 30vw; /* Set a maximum width for the form container */
+  width: 100%; /* Ensure the form takes up 100% width within the specified max-width */
 }
 
-input {
-  width: calc(100% - 20px); /* Kenar boşlukları eklemek için */
+.login-form input {
   background-color: var(--background-color);
-  margin: 10px 0;
-  height: 60px;
-  border-radius: 5px;
-  display: grid;
-  padding: 0 1rem;
-  outline: none;
+  color: #fff;
   border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 330px;
+  height: 40px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .login-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-content {
+    margin-bottom: 20px;
+  }
+
+  .login-form {
+    margin-top: 20px;
+    max-width: none; /* Remove the max-width on smaller screens */
+  }
 }
 
 .submit-button {
@@ -467,8 +482,6 @@ input {
   .card-title {
     font-size: 28px;
   }
-
- 
 }
 
 @media only screen and (max-width: 568px) {
@@ -581,5 +594,3 @@ input {
     width: 13.5%;
   }
 }
-
-
