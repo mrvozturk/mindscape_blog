@@ -86,7 +86,7 @@ export const cardData = [
   {
     title: 'FAVORİTE MOVİES',
     text:
-      'En sevdiğin filmleri bulmak artık daha kolay! Favori filmlerini işaretle ve istediğin zaman izle',
+      'En sevdiğin filmleri bulmak artık daha kolay! Favori filmlerini işaretle ',
     image: workImage6,
     link: 'https://favorite-movies-wheat.vercel.app/',
     icons: [

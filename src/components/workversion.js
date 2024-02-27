@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {
   Card,
   CardBody,
@@ -8,9 +7,9 @@ import {
   CardText
 } from 'react-bootstrap';
 import '../index.css';
-import {  cardData } from '../data';
+import { cardData } from '../data';
 
-const WorkVersion2 = () => {
+const Work = () => {
   const handleImageClick = link => {
     if (link) {
       window.open(link, '_blank');
@@ -19,13 +18,10 @@ const WorkVersion2 = () => {
 
   return (
     <div className='scrollable-container'>
-     
-       
-  
-
       <div className='header-container'>
         <h1 className='header-2'>Latest Work</h1>
       </div>
+
       <div className='image-row'>
         {cardData.map((card, index) => (
           <Card key={index} className='custom-card'>
@@ -39,6 +35,14 @@ const WorkVersion2 = () => {
               <CardTitle>{card.title}</CardTitle>
               <CardSubtitle>{card.subtitle}</CardSubtitle>
               <CardText>{card.text}</CardText>
+              <div className='custom-card-icons'>
+                {card.icons &&
+                  card.icons.map((icon, subIndex) => (
+                    <div key={subIndex} className='custom-card-icon-2'>
+                      <img src={icon.img} alt={icon.id} className='icon' />
+                    </div>
+                  ))}
+              </div>
             </CardBody>
           </Card>
         ))}
@@ -47,4 +51,4 @@ const WorkVersion2 = () => {
   );
 };
 
-export default  WorkVersion2;
+export default Work;

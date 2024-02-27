@@ -70,7 +70,7 @@ const LoginForm = () => {
         </div>
 
         <button className='submit-button' type='submit'>
-          Submit
+      SUBMİT
         </button>
       </form>
     </div>

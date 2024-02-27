@@ -1,5 +1,4 @@
 /* Variables */
-
 :root {
   --main-color: #2d2d2d;
   --text-color: #333;
@@ -10,8 +9,7 @@
 
 /* General Styles */
 body {
-  margin: 0; /* Remove default body margin */
-
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -186,13 +184,14 @@ body {
 
 /* Login Container */
 .login-container {
+  background-image: url('https://www.zerowastescotland.org.uk/sites/default/files/2023-03/contact-us-splash.png');
+  background-size: cover;
+  background-position: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-image: url(https://img.freepik.com/premium-photo/words-with-contact-us-business-concept-idea_352439-357.jpg);
-  background-size: cover; /* Make the background image cover the entire container */
-  background-position: center; /* Center the background image */
-  height: 40vh; /* Set a height to make sure the background covers the entire viewport */
+  padding: 0.5vw;
+  height: 25vw;
 }
 
 .left-content {
@@ -217,41 +216,6 @@ body {
   margin-bottom: 10px;
 }
 
-@media (max-width: 1024px) {
-  .login-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .left-content {
-    margin-bottom: 20px;
-  }
-
-  .login-form {
-    margin-top: 20px;
-    max-width: none; /* Remove the max-width on smaller screens */
-  }
-  .login-form input {
-    width: 50vw;
-    height: 50px;
-    margin-bottom: 10px;
-  }
-}
-@media (max-width: 768px) {
-  .login-form input {
-    width: 65vw;
-    height: 45px;
-    margin-bottom: 10px;
-  }
-}
-@media (max-width: 568px) {
-  .login-form input {
-    width: 85vw;
-    height: 45px;
-    margin-bottom: 10px;
-  }
-}
-
 .submit-button {
   width: 150px;
   background-color: var(--main-color);
@@ -262,6 +226,84 @@ body {
   border-radius: 4px;
   font-weight: 600;
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .login-container {
+    height: 50vw;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .login-form {
+    margin-top: 10px;
+    max-width: none; /* Remove the max-width on smaller screens */
+  }
+
+  .login-form input {
+    font-size: 25px;
+    width: 60vw;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  .header4 {
+    font-size: 55px;
+    margin-bottom: 30px;
+  }
+  .loginform-p {
+    font-size: 30px;
+  }
+  .submit-button {
+    width: 25vw; /* Adjust the width for smaller screens */
+    height: 55px; /* Adjust the height for smaller screens */
+    font-size: 20px; /* Adjust the font size for smaller screens */
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    height: 55vw;
+    text-align: center;
+  }
+
+  .login-form input {
+    width: 65vw;
+    height: 45px;
+    margin-bottom: 10px;
+  }
+  .loginform-p {
+    font-size: 25px;
+  }
+  .submit-button {
+    width: 25vw; /* Adjust the width for smaller screens */
+    height: 45px; /* Adjust the height for smaller screens */
+    font-size: 20px; /* Adjust the font size for smaller screens */
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 568px) {
+  .login-container {
+    height: 90vw;
+    text-align: center;
+  }
+
+  .login-form input {
+    width: 70vw;
+    height: 35px;
+    margin-bottom: 5px;
+  }
+  .loginform-p {
+    font-size: 13.5px;
+  }
+
+  .submit-button {
+    width: 45vw; /* Adjust the width for smaller screens */
+    height: 35px; /* Adjust the height for smaller screens */
+    font-size: 15px; /* Adjust the font size for smaller screens */
+    margin-bottom: 10px;
+  }
 }
 
 /* About Page */
@@ -374,11 +416,11 @@ body {
 @media screen and (max-width: 1200px) {
   .about-container {
     margin: 65px 0;
-    flex-direction: column-reverse; /* Stack items vertically with reverse order */
+    flex-direction: column-reverse;
   }
 
   .about-image {
-    max-width: 65%; /* Take full width on smaller screens */
+    max-width: 65%;
     margin: 0 auto;
   }
 
@@ -389,22 +431,26 @@ body {
     font-size: 3.8vw;
     text-align: center;
   }
+
   .custom-button {
     display: block;
     margin: 0 auto;
     margin-bottom: 10vw;
   }
+
   .header {
     font-size: 5.5vw;
   }
+
   .header-2 {
     font-size: 8.5vw;
   }
 
   .header-3 {
     font-size: 5.5vw;
-    text-align: center; /* Adjust text alignment as needed */
+    text-align: center;
   }
+
   .icon {
     margin-top: 0.5vw;
     margin-bottom: 9.5vw;
@@ -443,10 +489,7 @@ body {
     font-size: 3.5vw;
   }
 
-  .header4 {
-    font-size: 30px;
-    margin-bottom: 30px;
-  }
+ 
 }
 
 @media only screen and (max-width: 768px) {
@@ -456,28 +499,35 @@ body {
     font-size: 3.5vw;
     text-align: center;
   }
+
   .about-container {
     margin: 65px 0;
-    flex-direction: column-reverse; /* Stack items vertically with reverse order */
+    flex-direction: column-reverse;
   }
+
   .header {
     font-size: 5.5vw;
   }
+
   .about-image {
-    max-width: 65%; /* Take full width on smaller screens */
+    max-width: 65%;
     margin: 0 auto;
     margin-bottom: 3vw;
   }
+
   .header-2 {
     font-size: 7.5vw;
   }
+
   .header-3 {
     font-size: 8.5vw;
     text-align: center;
   }
+
   .body-text {
     font-size: 2.8vw;
   }
+
   .new-about-page-container,
   .new-paragraph {
     margin-top: 8%;
@@ -503,22 +553,28 @@ body {
   .card-text {
     font-size: 25px;
   }
+
   .card-title {
     font-size: 28px;
+  }
+  .header4 {
+    margin-top: 5px;
+    font-size: 45px;
   }
 }
 
 @media only screen and (max-width: 568px) {
   .about-container {
     margin: 40px 0;
-    flex-direction: column-reverse; /* Stack items vertically with reverse order */
+    flex-direction: column-reverse;
   }
 
   .about-image {
-    max-width: 85%; /* Take full width on smaller screens */
-    margin: 0 auto; /* Remove margin on smaller screens */
+    max-width: 85%;
+    margin: 0 auto;
     margin-bottom: 1vw;
   }
+
   .custom-button {
     font-size: 4.5vw;
     padding: 1.5vw;
@@ -574,17 +630,15 @@ body {
   }
 
   .card-text {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 12.8px;
     margin-bottom: 1px;
   }
 
   .header4 {
-    font-size: 30px;
-    margin-bottom: 30px;
+    font-size: 28px;
   }
 
-  /* Additional adjustments for smaller screens */
   .custom-page-container {
     margin-top: 30px;
     padding: 12px;
@@ -613,6 +667,7 @@ body {
     margin-left: 0;
     max-width: 100%;
   }
+
   .icon {
     margin-bottom: 15.5vw;
     width: 13.5%;
