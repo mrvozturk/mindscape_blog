@@ -9,7 +9,7 @@
 
 /* General Styles */
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -181,6 +181,11 @@ body {
   left: 0;
   margin: 20px;
 }
+.icon-link img {
+  height: 40px;
+  width: 40px;
+  border-radius: 12px;
+}
 
 /* Login Container */
 .login-container {
@@ -239,9 +244,12 @@ body {
     margin-top: 10px;
     max-width: none; /* Remove the max-width on smaller screens */
   }
-
+  .icon-link img {
+    height: 60px;
+    width: 60px;
+    border-radius: 12px;
+  }
   .login-form input {
-    font-size: 25px;
     width: 60vw;
     height: 50px;
     margin-bottom: 10px;
@@ -257,6 +265,7 @@ body {
     width: 25vw; /* Adjust the width for smaller screens */
     height: 55px; /* Adjust the height for smaller screens */
     font-size: 20px; /* Adjust the font size for smaller screens */
+    margin-top: 5px;
     margin-bottom: 40px;
   }
 }
@@ -274,6 +283,11 @@ body {
   }
   .loginform-p {
     font-size: 25px;
+  }
+  .icon-link img {
+    height: 50px;
+    width: 50px;
+    border-radius: 12px;
   }
   .submit-button {
     width: 25vw; /* Adjust the width for smaller screens */
@@ -295,12 +309,16 @@ body {
     margin-bottom: 5px;
   }
   .loginform-p {
-    font-size: 13.5px;
+    font-size: 15.5px;
   }
-
+  .icon-link img {
+    height: 40px;
+    width: 40px;
+    border-radius: 12px;
+  }
   .submit-button {
-    width: 45vw; /* Adjust the width for smaller screens */
-    height: 35px; /* Adjust the height for smaller screens */
+    width: 35vw; /* Adjust the width for smaller screens */
+    height: 33px; /* Adjust the height for smaller screens */
     font-size: 15px; /* Adjust the font size for smaller screens */
     margin-bottom: 10px;
   }
@@ -354,6 +372,7 @@ body {
 }
 
 .custom-paragraph {
+  font-size: 25px;
   margin-left: 20px;
   line-height: 1.9;
   max-width: 50%;
@@ -488,8 +507,69 @@ body {
     margin-top: 2vw;
     font-size: 3.5vw;
   }
+  .custom-page-container {
+    margin-top: 30px;
+    padding: 35px;
+  }
 
- 
+  .custom-text-container {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-about {
+    text-align: center;
+  }
+
+  .custom-image-container {
+    margin-top: 6vw;
+    width: 75%;
+  }
+
+  .custom-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .custom-paragraph {
+    text-align: center;
+    font-size: 35px;
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .registration-container {
+    margin-top: 10vw;
+  }
+
+  .small-registration-form {
+    max-width: 40vw;
+  }
+
+  .small-form-group {
+    margin-bottom: 15px;
+  }
+
+  .small-form-group input {
+    padding: 8px;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .contact-button {
+    font-size: 20px;
+  }
+
+  .header-3 {
+    text-align: center;
+    font-size: 8vw;
+  }
+  .header-5 {
+    font-size: 5vw;
+  }
+  p {
+    font-size: 3vw;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -560,6 +640,40 @@ body {
   .header4 {
     margin-top: 5px;
     font-size: 45px;
+  }
+  .custom-page-container {
+    margin-top: 30px;
+    padding: 32px;
+  }
+
+  .custom-text-container {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-about {
+    text-align: center;
+  }
+
+  .custom-image-container {
+    width: 75%;
+  }
+
+  .custom-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .custom-paragraph {
+    padding: 5vw;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 0 auto;
+    max-width: 100%;
+  }
+  .registration-container {
+    margin-top: 15vw;
   }
 }
 
@@ -641,7 +755,7 @@ body {
 
   .custom-page-container {
     margin-top: 30px;
-    padding: 12px;
+    padding: 15px;
   }
 
   .custom-text-container {
@@ -664,12 +778,48 @@ body {
   }
 
   .custom-paragraph {
-    margin-left: 0;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 0 auto;
     max-width: 100%;
   }
 
   .icon {
     margin-bottom: 15.5vw;
     width: 13.5%;
+  }
+  .registration-container {
+    margin-top: 30vw;
+  }
+
+  .small-registration-form {
+    max-width: 70vw;
+  }
+
+  .small-form-group {
+    margin-bottom: 15px;
+  }
+
+  .small-form-group input {
+    padding: 8px;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .contact-button {
+    font-size: 10px;
+  }
+
+  .header-3 {
+    text-align: center;
+    font-size: 10vw;
+  }
+  .header-5 {
+    font-size: 6vw;
+  }
+  p {
+    margin-top: 5vw;
+    margin-bottom: 8vw;
+    font-size: 4vw;
   }
 }

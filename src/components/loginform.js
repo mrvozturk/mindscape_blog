@@ -16,8 +16,7 @@ const LoginForm = () => {
           On both mobile and desktop platforms, I develop fast and interactive
           web applications with uninterrupted performance.
         </p>
-        <div className=''>
-          {' '}
+        <div className='loginform-icon'>
           <a
             href='mailto:ozturkmerve745@gmail.com'
             target='_blank'
@@ -70,11 +69,11 @@ const LoginForm = () => {
         </div>
 
         <button className='submit-button' type='submit'>
-      SUBMİT
+          SUBMİT
         </button>
       </form>
     </div>
   );
 };
 
-export default LoginForm
+export default LoginForm;
