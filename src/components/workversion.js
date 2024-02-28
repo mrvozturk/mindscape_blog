@@ -17,11 +17,12 @@ const Work = () => {
   };
 
   return (
-    <div className='scrollable-container'>
+    <div className='scrollable-container custom-card-container'>
+      {' '}
+      {/* Include custom-card-container class */}
       <div className='header-container'>
         <h1 className='header-2'>Latest Work</h1>
       </div>
-
       <div className='image-row'>
         {cardData.map((card, index) => (
           <Card key={index} className='custom-card'>

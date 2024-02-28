@@ -17,7 +17,8 @@ const Work = () => {
   };
 
   return (
-    <div className='scrollable-container'>
+    
+    <div className='scrollable-container custom-card-container'> {/* Include custom-card-container class */}
       <div className='icon-row'>
         {languageIcons.map((icon, index) => (
           <img key={index} src={icon} alt={`Language Icon`} className='icon' />
