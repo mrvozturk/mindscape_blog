@@ -166,7 +166,6 @@ body {
 
 .icon {
   width: 4.5%;
-  margin-right: 1%;
   margin-bottom: 3%;
   margin-top: 3%;
 }
@@ -475,12 +474,13 @@ body {
   }
 
   .icon {
-    margin-left: 0.1vw;
     margin-top: 0.5vw;
     margin-bottom: 9.5vw;
     width: 12%;
   }
-
+  .icon-row {
+    width: 96vw;
+  }
   .custom-card {
     font-size: 3.5vw;
   }
@@ -632,8 +632,11 @@ body {
   }
 
   .icon {
-    margin-left: 0.1vw;
     margin-bottom: 4vw;
+  }
+  .icon-row {
+    margin-bottom: 15vw;
+    width: 95vw;
   }
   .custom-card {
     flex-basis: calc(
@@ -831,10 +834,9 @@ body {
     max-width: 100%;
   }
 
-  .icon {
+  .icon-row {
     margin-right: 0.1vw;
-    margin-bottom: 15.5vw;
-    width: 12.5%;
+    width: 94vw;
   }
   .registration-container {
     margin-top: 30vw;
