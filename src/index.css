@@ -66,14 +66,16 @@ body {
 }
 
 .custom-button {
+  width: 150px;
   background-color: var(--main-color);
   color: #fff;
-  padding: 0.8vw 2vw;
-  font-size: 1vw;
-  margin-left: 5vw;
-  border-radius: 0.3vw;
   border: none;
   outline: none;
+  height: 40px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 5vw;
 }
 
 .about-container {
@@ -753,6 +755,7 @@ body {
   }
 
   .about-image {
+    text-align: center;
     max-width: 85%;
     margin: 0 auto;
     margin-bottom: 1vw;
