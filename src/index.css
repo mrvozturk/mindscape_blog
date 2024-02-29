@@ -523,7 +523,13 @@ body {
 
   .card-text {
     margin-top: 2vw;
-    font-size: 3.5vw;
+    font-size: 3vw;
+  }
+  .custom-card-text {
+    margin-top: 7.5px; /* Adjust this value to add space above the text */
+    margin-bottom: 7.5px; /* Adjust this value to add space below the text */
+    padding-left: 2px; /* Adjust this value to add space on the left */
+    padding-right: 30px;
   }
   .custom-page-container {
     margin-top: 30px;
@@ -654,11 +660,11 @@ body {
     width: 95%;
   }
   .custom-card-icon-2 {
-    width: 18%;
+    width: 14%;
   }
 
   .custom-card-icons {
-    margin-bottom: 30%;
+    margin-bottom: 25%;
   }
 
   .custom-card-icon-2 img {
@@ -667,12 +673,19 @@ body {
   }
 
   .card-text {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .card-title {
     font-size: 28px;
   }
+  .custom-card-text {
+    margin-top: 7.5px; /* Adjust this value to add space above the text */
+    margin-bottom: 7.5px; /* Adjust this value to add space below the text */
+    padding-left: 2px; /* Adjust this value to add space on the left */
+    padding-right: 30px;
+  }
+ 
   .header4 {
     margin-top: 5px;
     font-size: 45px;
@@ -794,11 +807,15 @@ body {
   }
 
   .card-text {
-    margin-top: 5px;
-    font-size: 12.8px;
-    margin-bottom: 1px;
+    font-size: 13px;
   }
-
+  .custom-card-text {
+    margin-top: 7.5px; /* Adjust this value to add space above the text */
+    margin-bottom: 7.5px; /* Adjust this value to add space below the text */
+    padding-left: 0; /* Adjust this value to add space on the left */
+    padding-right: 23px;
+  }
+ 
   .header4 {
     font-size: 28px;
   }

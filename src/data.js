@@ -46,7 +46,7 @@ export const cardData = [
   {
     title: 'THE HUNGER',
     text:
-      'Herkesin vazgeçilmez öğünü olan ve pizzalardan oluşan  bu menü, dilediğiniz pizzayı seçip sipariş verebilirsiniz.',
+      'Herkesin vazgeçilmezi olan ve pizzalardan oluşan  bu menü de, dilediğiniz pizzayı seçip sipariş verebilirsiniz.',
     image: workImage3,
     link: 'https://the-hunger.vercel.app/',
     icons: [
@@ -73,7 +73,7 @@ export const cardData = [
   {
     title: 'PUZZLE GAME',
     text:
-      'Bu oyun, zihinsel becerilerinizi sınayacak ve sizi bulmacaların büyülü dünyasına götürecek',
+      'Bu oyun, zihinsel becerilerinizi sınayacak bulmacaların büyülü dünyasına götürecek',
     image: workImage5,
     link: 'https://puzzle-new.vercel.app/',
     icons: [
@@ -86,7 +86,7 @@ export const cardData = [
   {
     title: 'FAVORİTE MOVİES',
     text:
-      'En sevdiğin filmleri bulmak artık daha kolay! Favori filmlerini işaretle ',
+      'En sevdiğin filmleri bulmak artık daha kolay! Favori filmlerini işaretle dilediğin an izle ',
     image: workImage6,
     link: 'https://favorite-movies-wheat.vercel.app/',
     icons: [
