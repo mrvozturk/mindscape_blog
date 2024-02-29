@@ -1,6 +1,7 @@
 import React from 'react';
 import '../index.css';
 import aboutImage from '../images/aboutimage.png';
+import LoginForm from './loginform'; // Import LoginForm component
 
 const AboutPage = () => {
   return (
@@ -20,7 +21,8 @@ const AboutPage = () => {
             your product or service online and help you.
           </p>
         </div>
-        <div className='loginform-icon'>
+
+        {/*     <div className='loginform-icon'>
           <a
             href='mailto:ozturkmerve745@gmail.com'
             target='_blank'
@@ -59,8 +61,9 @@ const AboutPage = () => {
               alt='LinkedIn Icon'
             />
           </a>
-        </div>
+        </div>*/}
       </div>
+      <LoginForm />
     </div>
   );
 };

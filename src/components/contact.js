@@ -47,7 +47,7 @@ const RegistrationForm = () => {
         </div>
 
         <button className='contact-button' type='submit'>
-          Send Message
+         Send Message
         </button>
       </form>
     </div>
