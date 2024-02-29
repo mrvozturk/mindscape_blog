@@ -43,6 +43,18 @@ const LoginForm = () => {
             />
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a
+            href='https://github.com/mrvozturk'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='icon-link'
+          >
+            <img
+              height='35'
+              src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png'
+              alt='LinkedIn Icon'
+            />
+          </a>
         </div>
       </div>
 
