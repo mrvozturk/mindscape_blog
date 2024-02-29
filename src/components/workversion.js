@@ -7,7 +7,7 @@ import {
   CardText
 } from 'react-bootstrap';
 import '../index.css';
-import { languageIcons, cardData } from '../data';
+import { cardData } from '../data';
 
 const Work = () => {
   const handleImageClick = link => {
@@ -20,11 +20,6 @@ const Work = () => {
     <div className='scrollable-container custom-card-container'>
       {' '}
       {/* Include custom-card-container class */}
-      <div className='icon-row'>
-        {languageIcons.map((icon, index) => (
-          <img key={index} src={icon} alt={`Language Icon`} className='icon' />
-        ))}
-      </div>
       <div className='header-container'>
         <h1 className='header-2'>Latest Work</h1>
       </div>
