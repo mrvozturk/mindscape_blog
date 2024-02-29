@@ -813,9 +813,13 @@ body {
     margin-top: 7.5px; /* Adjust this value to add space above the text */
     margin-bottom: 7.5px; /* Adjust this value to add space below the text */
     padding-left: 0; /* Adjust this value to add space on the left */
-    padding-right: 23px;
+    padding-right:7px;
   }
- 
+  .custom-card-body {
+    margin-top: 15px;
+    padding-left: 10px; /* Adjust this value to add space on the left */
+    padding-right: 10px; /* Adjust this value to add space on the right */
+  }
   .header4 {
     font-size: 28px;
   }
