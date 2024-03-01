@@ -73,7 +73,7 @@ export const cardData = [
   {
     title: 'PUZZLE GAME',
     text:
-      'Bu oyun, zihinsel becerilerinizi sınayacak bulmacaların büyülü dünyasına götürecek',
+      'Bu oyun, zihinsel becerilerinizi sınayacak ve bulmacaların büyülü dünyasına götürecek',
     image: workImage5,
     link: 'https://puzzle-new.vercel.app/',
     icons: [

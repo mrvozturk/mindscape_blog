@@ -15,7 +15,7 @@ const RegistrationForm = () => {
   return (
     <div className='registration-container' id='registrationFormSection'>
       <div className='left-content'>
-        <h1 className='header-3'>CONTACT US</h1>
+        <h1 className='header-7'>CONTACT US</h1>
 
         <h1 className='header-5'>Create an account</h1>
         <p>
