@@ -42,9 +42,8 @@ body {
 }
 
 .navbar-links a:hover {
-  color: var(--hover-color);
+  color: darkgray; /* Hover olduğunda kahverengi renk değiştir */
 }
-
 .navbar-links li {
   margin-left: 3vw;
 }
@@ -77,6 +76,11 @@ body {
   cursor: pointer;
   margin-left: 5vw;
   font-size: 17px;
+}
+
+.custom-button:hover {
+  background-color: darkgray; /* Açık siyah rengini kullan */
+  color: #fff;
 }
 
 .about-container {
@@ -236,7 +240,11 @@ body {
   margin-bottom: 10px;
   padding-left: 10px;
 }
+.loginform-p {
+  font-family: Arial, sans-serif; /* Örnek bir font değişikliği */
 
+  color: black;
+}
 .submit-button {
   width: 150px;
   background-color: var(--main-color);
@@ -248,7 +256,10 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
-
+.submit-button:hover {
+  background-color: darkgray; /* Açık siyah rengini kullan */
+  color: #fff;
+}
 @media (max-width: 1024px) {
   .login-container {
     height: 50vw;
@@ -454,6 +465,10 @@ body {
   font-weight: 600;
   cursor: pointer;
   margin: 0 auto; /* Butonu ortala */
+}
+.contact-button:hover {
+  background-color: darkgray; /* Açık siyah rengini kullan */
+  color: #fff;
 }
 .header-5 {
   text-align: center;
@@ -978,7 +993,9 @@ p {
     font-size: 4vw;
   }
   .contact-button {
-    margin-top: 10px;
-    font-size: 14.5px;
+    margin-top: 8px;
+    width: 32vw;
+    height: 9vw;
+    font-size: 12px;
   }
 }
