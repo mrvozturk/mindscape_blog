@@ -26,7 +26,7 @@ const Work = () => {
         ))}
       </div>
       <div className='header-container'>
-        <h1 className='header-2'>Latest Work</h1>
+        <h1 className='header-2'>PROJELERİM</h1>
       </div>
       <div className='image-row'>
         {cardData.map((card, index) => (

@@ -12,14 +12,17 @@ const AboutPage = () => {
             <img src={aboutImage} alt='About' className='custom-image' />
           </div>
           <div className='custom-paragraph animated-text'>
-            <h1 className='custom-about'>About Me</h1>
+            <h1 className='custom-about'>Hakkımda</h1>
             <p>
-              Ability to put themselves in the merchant's shoes. It is meant to
-              partner on the long run and work as an extension of the merchant's
-              team. A digital agency is a business you hire to outsource your
-              digital marketing efforts, instead of handling in-house. They can
-              provide your business with a variety of digital solutions to promote
-              your product or service online and help you.
+              Web geliştirme konusunda deneyimli bir yazılımcıyım ve çeşitli
+              modern teknolojilerle çalışıyorum. Özellikle React.js, Next.js,
+              JavaScript, TypeScript, HTML, CSS, Bootstrap ve Redux gibi
+              araçları kullanarak, kullanıcı dostu ve etkileyici web
+              uygulamaları oluşturmayı seviyorum. GitHub üzerinde projelerimi
+              yönetirken ve Figma gibi tasarım araçlarıyla kullanıcı
+              arayüzlerini tasarlarken deneyim kazanıyorum. Yazılım dünyasında
+              kendimi sürekli geliştirmeye odaklıyım ve yeni teknolojilere
+              açığım
             </p>
           </div>
         </div>

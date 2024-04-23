@@ -13,16 +13,17 @@ const About = () => {
       <div className='frontend-developer'>
         <h1 className='header-3'>Frontend Developer</h1>
         <p className='body-text'>
-          Frontend developer olarak, web uygulamalarının ön yüzünü geliştirme
-          konusunda uzmanlıkla çalışıyor, estetik ve kullanıcı dostu arayüzler
-          tasarlıyorum
+          Web geliştirme konusunda deneyimli bir yazılımcıyım. React.js,
+          Next.js, JavaScript, TypeScript, HTML, CSS, Bootstrap, Redux ve Figma
+          gibi araçlarla kullanıcı dostu web uygulamaları oluşturuyorum, GitHub
+          üzerinde projelerimi yönetirken sürekli kendimi geliştiriyorum.
         </p>
         <button
           className='custom-button'
           type='submit'
           onClick={scrollToLoginForm}
         >
-          İletişim
+      İletişim
         </button>
       </div>
       <div className='about-image-container'>

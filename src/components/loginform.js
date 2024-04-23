@@ -11,10 +11,12 @@ const LoginForm = () => {
   return (
     <div className='login-container' id='loginFormSection'>
       <div className='left-content'>
-        <h1 className='header4'>Let's work together</h1>
+        <h1 className='header4'>İletişim </h1>
         <p className='loginform-p'>
-          On both mobile and desktop platforms, I develop fast and interactive
-          web applications with uninterrupted performance.
+          Web uygulamaları geliştirirken, kullanıcı deneyimini ön planda
+          tutarak, kullanıcıların kolayca etkileşimde bulunabileceği ve amacına
+          hızlıca ulaşabileceği kullanıcı dostu arayüzler oluşturmayı
+          amaçlıyorum
         </p>
         <div className='loginform-icon'>
           <a
@@ -66,7 +68,7 @@ const LoginForm = () => {
             value={name}
             onChange={e => setName(e.target.value)}
             required
-            placeholder='Name'
+            placeholder='Ad-Soyad'
           />
         </div>
         <div className='form-group'>
@@ -81,7 +83,7 @@ const LoginForm = () => {
         </div>
 
         <button className='submit-button' type='submit'>
-          SUBMİT
+          GÖNDER
         </button>
       </form>
     </div>

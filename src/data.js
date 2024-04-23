@@ -1,10 +1,12 @@
 import workImage1 from './images/doga.png';
+import workImage8 from './images/todo.png';
 import workImage2 from './images/wordgame.jpg';
 import workImage3 from './images/pizza.jpeg';
 import workImage4 from './images/spinwheel.png';
 import workImage5 from './images/puzzle.jpeg';
 import workImage6 from './images/film.jpg';
 import workImage7 from './images/blog.avif';
+
 import IconReact from './images/react.png';
 import IconJavascript from './images/javascript.png';
 import IconCSS from './images/css.png';
@@ -22,7 +24,7 @@ export const cardData = [
   {
     title: 'DOĞAYLA YAŞAM',
     text:
-      ' Sürdürülebilir yaşamı ve insanları doğayla bağlılıklarınızı güçlendirebilirsiniz',
+      'Sürdürülebilir yaşamı güçlendirin ve benzersiz yetenekleriniz aracılığıyla doğayla bağınızı derinleştirin',
     image: workImage1,
     link: 'https://bbc-blog.vercel.app/',
     icons: [
@@ -31,83 +33,89 @@ export const cardData = [
     ]
   },
   {
+    title: 'YAPILACAKLAR LİSTESİ',
+    text:
+      ' Görevleri kaydedin, tamamlandığında işaretleyin kolayca silin ve filtreleme ile rahtalıkla bulun',
+    image: workImage8,
+    link: 'https://todo-list-pi-nine-56.vercel.app/',
+    icons: [
+      { id: 1, img: IconHTML },
+      { id: 2, img: IconCSS },
+      { id: 3, img: IconJavascript }
+    ]
+  },
+  {
+    title: 'FAVORİ FİLMLER',
+    text:
+      'En sevdiğiniz filmleri zahmetsizce keşfedin. İstediğiniz zaman kolaylıkla işaretleyin ve izleyin',
+    image: workImage6,
+    link: 'https://todo-list-pi-nine-56.vercel.app/',
+    icons: [
+      { id: 1, img: IconHTML },
+      { id: 2, img: IconCSS },
+      { id: 3, img: IconJavascript },
+      { id: 4, img: IconReact }
+    ]
+  },
+  {
     title: 'KELİME OYUNU',
     text:
-      'Kelime oyunu, İngilizce becerileri geliştiren ve eğlenceli şekilde dilinizi geliştirebilirsiniz',
+      'İlgi çekici ve eğlenceli kelime oyunlarıyla dil yeterliliğini geliştirerek İngilizce becerilerinizi büyüleyici bir şekilde geliştirin',
     image: workImage2,
     link: 'https://word-games-phi.vercel.app/',
     icons: [
       { id: 1, img: IconHTML },
       { id: 2, img: IconCSS },
       { id: 3, img: IconJavascript }
-
     ]
   },
   {
     title: 'THE HUNGER',
     text:
-      'Herkesin vazgeçilmezi olan ve pizzalardan oluşan  bu menü de, dilediğiniz pizzayı seçip sipariş verebilirsiniz.',
+      'Herkesin favori pizzalarının yer aldığı nefis menümüzü keşfedin. İstediğiniz pizzayı rahatlıkla sipariş edin',
     image: workImage3,
     link: 'https://the-hunger.vercel.app/',
     icons: [
       { id: 1, img: IconHTML },
       { id: 2, img: IconCSS },
-      { id: 2, img: IconReact },
-      { id: 3, img: IconJavascript }
-
+      { id: 3, img: IconReact },
+      { id: 4, img: IconJavascript }
     ]
   },
   {
-    title: 'SPIN WHEEL',
+    title: 'CEZALI ÇARK',
     text:
-      'Çarkı çevir, soruları yanıtla ve bilgi seviyeni test et! Yanlış cevap verildiğinde cezan seni bekliyor ',
+      'Çarkı döndürün, soruları yanıtlayın ve bilginizi test edin. Yanlış cevapların sonuçlarıyla yüzleşin',
     image: workImage4,
     link: 'https://question-wheel.vercel.app/',
     icons: [
       { id: 1, img: IconHTML },
       { id: 2, img: IconCSS },
       { id: 3, img: IconJavascript }
-
     ]
   },
   {
-    title: 'PUZZLE GAME',
+    title: 'PUZZLE',
     text:
-      'Bu oyun, zihinsel becerilerinizi sınayacak ve bulmacaların büyülü dünyasına götürecek',
+      'Zihinsel becerilerinize meydan okuyun ve bulmacaların büyüleyici dünyasında büyülü bir yolculuğa çıkın',
     image: workImage5,
     link: 'https://puzzle-new.vercel.app/',
     icons: [
       { id: 1, img: IconHTML },
       { id: 2, img: IconCSS },
       { id: 3, img: IconJavascript }
-
-    ]
-  },
-  {
-    title: 'FAVORİTE MOVİES',
-    text:
-      'En sevdiğin filmleri bulmak artık daha kolay! Favori filmlerini işaretle dilediğin an izle ',
-    image: workImage6,
-    link: 'https://favorite-movies-wheat.vercel.app/',
-    icons: [
-      { id: 1, img: IconHTML },
-      { id: 2, img: IconCSS },
-      { id: 3, img: IconJavascript },
-      { id: 3, img: IconReact }
-
     ]
   },
   {
     title: 'BLOG',
     text:
-      'Eğitim sitesi, yazılım sektöründe donanımlı uzmanları yetiştiren bir uygulamadır',
+      'Yazılım endüstrisinde yetenekli uzmanları yetiştiren eğitim sitesi. Kapsamlı eğitim için ziyaret edin',
     image: workImage7,
-    link: 'https://www.merveozturk.dev/',
+    link: 'https://training-html-ten.vercel.app/',
     icons: [
       { id: 1, img: IconHTML },
       { id: 2, img: IconCSS },
       { id: 3, img: IconJavascript }
-
     ]
   }
 ];

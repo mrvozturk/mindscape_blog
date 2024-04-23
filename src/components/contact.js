@@ -15,13 +15,41 @@ const RegistrationForm = () => {
   return (
     <div className='registration-container' id='registrationFormSection'>
       <div className='left-content'>
-        <h1 className='header-7'>CONTACT US</h1>
+        <h1 className='header-7'>İLETİŞİM FORMU</h1>
 
-        <h1 className='header-5'>Create an account</h1>
         <p>
-          Join us to explore a world of opportunities and collaboration. Let's
-          build something amazing together!
+          Benimle iletişime geçmek isterseniz, aşağıdaki iletişim bilgilerinden
+          birini kullanabilir veya iletişim formunu doldurabilirsiniz
         </p>
+      </div>
+      <div className='loginform-icon'>
+        <a
+          href='mailto:ozturkmerve745@gmail.com'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='icon-link'
+        >
+          <img
+            height='35'
+            src='https://cdn-icons-png.flaticon.com/512/552/552486.png'
+            alt='Email Icon'
+          />
+        </a>
+        &nbsp;&nbsp;&nbsp;
+        <a
+          href='https://www.linkedin.com/in/merve-%C3%B6-5062a5260/'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='icon-link'
+        >
+          <img
+            height='35'
+            src='https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-256.png'
+            alt='LinkedIn Icon'
+          />
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
       </div>
       <form className='small-registration-form' onSubmit={handleSubmit}>
         <div className='small-form-group'>
@@ -31,7 +59,7 @@ const RegistrationForm = () => {
             value={name}
             onChange={e => setName(e.target.value)}
             required
-            placeholder='Name'
+            placeholder='Ad-Soyad'
           />
         </div>
 
@@ -47,7 +75,7 @@ const RegistrationForm = () => {
         </div>
 
         <button className='contact-button' type='submit'>
-         Send Message
+          Gönder
         </button>
       </form>
     </div>
