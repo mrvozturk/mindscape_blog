@@ -33,9 +33,9 @@ export const cardData = [
     ]
   },
   {
-    title: 'YAPILACAKLAR LİSTESİ',
+    title: 'TO-LİST',
     text:
-      ' Görevleri kaydedin, tamamlandığında işaretleyin kolayca silin ve filtreleme ile rahtalıkla bulun',
+      ' Görevleri kaydedin, tamamlandığında işaretleyin kolayca silin ve filtreleme ile rahatlıkla bulun',
     image: workImage8,
     link: 'https://todo-list-pi-nine-56.vercel.app/',
     icons: [
@@ -60,7 +60,7 @@ export const cardData = [
   {
     title: 'KELİME OYUNU',
     text:
-      'İlgi çekici ve eğlenceli kelime oyunlarıyla dil yeterliliğini geliştirerek İngilizce becerilerinizi büyüleyici bir şekilde geliştirin',
+      'İlgi çekici ve eğlenceli kelime oyunlarıyla dil yeterliliğini geliştirerek İngilizcenizi geliştirin',
     image: workImage2,
     link: 'https://word-games-phi.vercel.app/',
     icons: [
@@ -97,7 +97,7 @@ export const cardData = [
   {
     title: 'PUZZLE',
     text:
-      'Zihinsel becerilerinize meydan okuyun ve bulmacaların büyüleyici dünyasında büyülü bir yolculuğa çıkın',
+      'Zihinsel becerilerinize meydan okuyun bulmacaların büyüleyici dünyasında ve büyülü  yolculuğa çıkın',
     image: workImage5,
     link: 'https://puzzle-new.vercel.app/',
     icons: [
