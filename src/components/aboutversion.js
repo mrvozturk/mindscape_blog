@@ -1,7 +1,7 @@
 import React from 'react';
 import '../index.css';
-import aboutImage from '../images/logo.jpg';
-import LoginForm from './loginform'; 
+import aboutImage from '../images/about.jpg';
+import LoginForm from './loginform'; // Import LoginForm component
 
 const AboutPage = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../index.css';
-import aboutImage from '../images/logo.jpg';
+import aboutImage from '../images/about.jpg';
 
 const About = () => {
   const scrollToLoginForm = () => {
