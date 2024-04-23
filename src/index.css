@@ -935,9 +935,9 @@ p {
     font-size: 12px;
   }
   .custom-card-text {
-    margin-bottom: 12px;
+    margin-bottom: 13px;
     padding-left: 0px;
-    padding-right: 1px;
+    padding-right: 0px;
   }
   .custom-card-body {
     margin-top: 15px;
