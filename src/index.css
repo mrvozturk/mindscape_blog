@@ -14,6 +14,10 @@ body {
 }
 
 /* Navbar */
+.navbarlogo {
+  width: 22%;
+  border-radius: 50px;
+}
 .header {
   margin: 1.5vw;
   font-size: 3vw;
@@ -42,7 +46,7 @@ body {
 }
 
 .navbar-links a:hover {
-  color: darkgray; 
+  color: darkgray;
 }
 .navbar-links li {
   margin-left: 3vw;
@@ -79,7 +83,7 @@ body {
 }
 
 .custom-button:hover {
-  background-color: darkgray; 
+  background-color: darkgray;
   color: #fff;
 }
 
@@ -93,6 +97,7 @@ body {
   max-width: 60%;
   margin: 5.5vw;
   margin-left: auto;
+  border-radius: 10vw;
 }
 
 .image-row {
@@ -113,7 +118,7 @@ body {
   margin: 0.8vw;
 }
 .custom-card-container {
-  padding: 0 1vw; 
+  padding: 0 1vw;
   justify-content: space-between;
 }
 
@@ -165,15 +170,15 @@ body {
   margin-bottom: 10px;
 }
 .custom-card-text {
-  margin-top: 7.5px; 
-  margin-bottom: 20px; 
-  padding-left: 0; 
+  margin-top: 7.5px;
+  margin-bottom: 20px;
+  padding-left: 0;
   padding-right: 100px;
 }
 .custom-card-body {
   margin-top: 18px;
-  padding-left: 18px; 
-  padding-right: 18px; 
+  padding-left: 18px;
+  padding-right: 18px;
 }
 .icon-row {
   display: flex;
@@ -223,13 +228,12 @@ body {
 }
 
 .login-form {
-  max-width: 28%; 
+  max-width: 28%;
   width: 100%;
-  
 }
 
 .login-form input {
-  background-color: white; 
+  background-color: white;
   color: black;
   border: none;
   outline: none;
@@ -242,7 +246,7 @@ body {
   padding-left: 10px;
 }
 .loginform-p {
-  font-family: Arial, sans-serif; 
+  font-family: Arial, sans-serif;
 
   color: black;
 }
@@ -258,7 +262,7 @@ body {
   cursor: pointer;
 }
 .submit-button:hover {
-  background-color: darkgray; 
+  background-color: darkgray;
   color: #fff;
 }
 @media (max-width: 1024px) {
@@ -291,9 +295,9 @@ body {
     font-size: 30px;
   }
   .submit-button {
-    width: 25vw; 
-    height: 55px; 
-    font-size: 28px; 
+    width: 25vw;
+    height: 55px;
+    font-size: 28px;
     margin-top: 10px;
     margin-bottom: 40px;
   }
@@ -301,7 +305,7 @@ body {
 
 @media (max-width: 768px) {
   .login-container {
-    height: 55vw;
+    height: 65vw;
     text-align: center;
   }
 
@@ -320,15 +324,15 @@ body {
   }
   .submit-button {
     width: 25vw;
-    height: 45px; 
-    font-size: 20px; 
+    height: 45px;
+    font-size: 20px;
     margin-bottom: 20px;
   }
 }
 
 @media (max-width: 568px) {
   .login-container {
-    height: 91vw;
+    height: 98vw;
     text-align: center;
   }
 
@@ -397,8 +401,9 @@ body {
 }
 
 .custom-image {
-  width: 70%;
+  width: 60%;
   height: auto;
+  border-radius: 25vw;
 }
 
 .custom-paragraph {
@@ -439,15 +444,14 @@ body {
 .small-form-group {
   margin-top: 10px;
   margin-bottom: 10px;
-  
 }
 
 .small-form-group input {
   padding: 12px;
   font-size: 16px;
-  width: 100%; 
+  width: 100%;
   height: 40px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   background-color: var(--background-color);
   color: black;
   border: none;
@@ -470,7 +474,7 @@ body {
   margin: 0 auto;
 }
 .contact-button:hover {
-  background-color: darkgray; 
+  background-color: darkgray;
   color: #fff;
 }
 .header-5 {
@@ -555,10 +559,8 @@ p {
     font-size: 3.5vw;
   }
   .custom-card {
-    flex-basis: calc(
-      50% - 2vw
-    ); 
-    margin: 1vw; 
+    flex-basis: calc(50% - 2vw);
+    margin: 1vw;
   }
 
   .custom-card-container {
@@ -598,14 +600,14 @@ p {
   }
   .custom-card-text {
     margin-top: 7.5px;
-    margin-bottom: 7.5px; 
-    padding-left: 2px; 
+    margin-bottom: 7.5px;
+    padding-left: 2px;
     padding-right: 10px;
   }
   .custom-card-body {
     margin-top: 40px;
     padding-left: 30px;
-    padding-right: 40px; 
+    padding-right: 40px;
   }
   .custom-page-container {
     margin-top: 30px;
@@ -666,6 +668,13 @@ p {
   p {
     font-size: 3vw;
   }
+  .custom-image {
+    border-radius: 35vw;
+  }
+  .about-image{
+    border-radius: 45vw;
+
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -694,6 +703,7 @@ p {
     max-width: 65%;
     margin: 0 auto;
     margin-bottom: 3vw;
+    border-radius: 35vw;
   }
 
   .header-2 {
@@ -731,10 +741,8 @@ p {
     width: 95vw;
   }
   .custom-card {
-    flex-basis: calc(
-      50% - 2vw
-    ); 
-    margin: 1vw; 
+    flex-basis: calc(50% - 2vw);
+    margin: 1vw;
   }
 
   .custom-card-container {
@@ -774,8 +782,8 @@ p {
   }
   .custom-card-body {
     margin-top: 25px;
-    padding-left: 18px; 
-    padding-right: 18px; 
+    padding-left: 18px;
+    padding-right: 18px;
   }
 
   .header4 {
@@ -835,6 +843,9 @@ p {
     margin-top: 10px;
     font-size: 15.5px;
   }
+  .custom-image {
+    border-radius: 40vw;
+  }
 }
 
 @media only screen and (max-width: 568px) {
@@ -889,16 +900,14 @@ p {
     font-size: 4vw;
   }
   .custom-card {
-    flex-basis: calc(
-      50% - 2vw
-    ); 
-    margin: 1vw; 
+    flex-basis: calc(50% - 2vw);
+    margin: 1vw;
   }
 
   .custom-card-container {
     padding: 1vw;
     margin-left: 7.5px;
-    justify-content: space-around; 
+    justify-content: space-around;
   }
   .custom-card .custom-card-image {
     width: 95%;
@@ -927,13 +936,13 @@ p {
   }
   .custom-card-text {
     margin-bottom: 12px;
-    padding-left: 0; 
+    padding-left: 0;
     padding-right: 6px;
   }
   .custom-card-body {
     margin-top: 15px;
     padding-left: 10px;
-    padding-right: 10px; 
+    padding-right: 10px;
   }
   .header4 {
     font-size: 28px;
@@ -1000,5 +1009,9 @@ p {
     width: 32vw;
     height: 9vw;
     font-size: 12px;
+  }
+  .about-image{
+    border-radius: 45vw;
+
   }
 }

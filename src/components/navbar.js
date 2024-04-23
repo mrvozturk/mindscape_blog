@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../index.css';
+import aboutImage from '../images/logo1.jpeg';
 
 const Navbar = () => {
   const handleClick = () => {};
@@ -8,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
       <Link to='/' className='header' onClick={handleClick}>
-        Logo
+      <img src={aboutImage} alt='About' className='navbarlogo' />
       </Link>
 
       <ul className='navbar-links'>
